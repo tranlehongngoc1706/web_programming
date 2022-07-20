@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+header footer{
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+
+#main {
+    background-color: white;
+    display: flex;
+}
+
+main{
+    background-color: green;
+    flex: 1;
+}
+
+aside{
+    background-color: black ;
+}
+
+#left{
+    width: 30%;
+    min-width: 200px;
+}
+
+#right{
+    width: 15%;
+}
