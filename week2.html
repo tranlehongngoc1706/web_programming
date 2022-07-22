@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form onsubmit="return false" method="get" enctype="multipart/form-data" target=""> 
+        <div>
+            <label for="1">Purpose of Contact</label>
+            <select name="contact_purpose" id="1">
+                <option>Business</option>
+                <option>Personal</option>
+            </select>
+        </div>    
+        
+        <div>
+            <label for="2">Name</label>
+            <input type="text" name="name" required max="50" id="2" >
+        </div>
+           
+        <div>
+            <label for="3">Email</label>
+            <input type="email" name="email" id="3">
+        </div>
+
+        <div>
+            <label for="4">Phone</label>
+            <input type="tel" name="phone_num" pattern="[0]{1}-[0-9]{9}" id="4">
+        </div>   
+
+        <div>
+            <label >Preferred contact method</label>
+            <input type="radio" id="E" name="pref_contact_method" value="email" ><label for="E">Email</label>
+            <input type="radio" id="P" name="pref_contact_method" value="phone" ><label for="P">Phone</label>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+        <div>
+            <label>Contact Days</label>
+            <ul>
+                <li><input type="checkbox" name="d[]" value="1">Monday</li>
+                <li><input type="checkbox" name="d[]" value="2">Tuesday</li>
+                <li><input type="checkbox" name="d[]" value="3"> Wednesday</li>
+                <li><input type="checkbox" name="d[]" value="4"> Thursday</li>
+                <li><input type="checkbox" name="d[]" value="5"> Friday</li><input type="checkbox" name="d[]" value="5"> Friday
+            <input type="checkbox" name="d[]" value="6"> Saturday
+            <input type="checkbox" name="d[]" value="7"> Sunday
+            </ul>
+        </div>
+
+        <div>
+            <label>Attachment</label>
+            <input type="file"> 
+        </div>
+
+        <div>
+            <label>Message</label>
+            <textarea cols="10" rows="5"></textarea>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XqZsoesa55w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
+    </form>
+</body>
+</html>
